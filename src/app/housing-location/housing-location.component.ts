@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { Housinglocation } from '../housinglocation';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-housing-location',
   standalone: true,
-  imports: [RouterModule, RouterOutlet],
+  imports: [CommonModule, RouterModule, RouterOutlet],
   template: `
   <section class="listing">
     <img class="listing-photo" [src]="housingLocation.photo" alt="Exterior photo of {{housingLocation.name}}">

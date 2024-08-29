@@ -1,6 +1,7 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
+import { NgModule } from '@angular/core';
 
 const routeConfig: Routes = [
     {
@@ -14,5 +15,10 @@ const routeConfig: Routes = [
         title: 'Home Details'
     },  
 ];
+
+NgModule({
+    imports: [RouterModule.forRoot(routeConfig)],
+    exports: [RouterModule]
+})
 
 export default routeConfig;
