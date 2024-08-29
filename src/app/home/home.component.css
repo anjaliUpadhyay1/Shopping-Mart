@@ -25,7 +25,7 @@
   }
   
   @media (min-width: 500px) and (max-width: 768px) {
-    .results {
+    results {
         grid-template-columns: repeat(2, 1fr);
     }
     input[type="text"] {
@@ -34,7 +34,7 @@
   }
   
   @media (max-width: 499px) {
-    .results {
+    results {
         grid-template-columns: 1fr;
     }    
   }
